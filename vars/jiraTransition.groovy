@@ -1,4 +1,4 @@
 def call(Map config){
     echo "Ola ${config.login}"
-    sh LibraryResource 'jira/transition.sh'
+    sh libraryResource 'jira/transition.sh'
 }
