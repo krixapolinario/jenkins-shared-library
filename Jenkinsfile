@@ -10,7 +10,7 @@ pipeline {
                 jiraTransition(
                     jiraCredential: 'testesecret',
                     jiraState: 'done',
-                    jiraIssue: $env.GitSCMSource
+                    jiraIssue: 1
                 )
             }
         }
