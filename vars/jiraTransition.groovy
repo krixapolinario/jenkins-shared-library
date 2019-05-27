@@ -15,13 +15,17 @@
 
 
 def call(Map config){
-    if ( config.jiraState == 'OPEN' ) {
-        jiraStateId='1'
-    } else if ( config.jiraState == 'IN_PROGRESS' ) {
-        jiraStateId='2'
-    } else {
-        jiraStateId='3'
-    }
+
+    jiraCodes = [
+        done:'1', 
+        review:'2', 
+        blocked:'3', 
+    ]
+
+    jiraCredential = config.jiraCredential ?: 'defaultjiracred'
+
+    jiraStateId = jiraCodes.get(config.jiraState)
+
     echo ">>>> ${jiraStateId}"
     // jiraTransitionIssue(
     //     idOrKey: config.jiraIssue,

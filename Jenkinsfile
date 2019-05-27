@@ -8,9 +8,9 @@ pipeline {
         stage('teste'){
             steps{
                 jiraTransition(
-                    login: 'cristiane',
                     jiraCredential: 'testesecret',
-                    jiraState: 'DONE'
+                    jiraState: 'done',
+                    jiraIssue: $env.GitSCMSource
                 )
             }
         }
