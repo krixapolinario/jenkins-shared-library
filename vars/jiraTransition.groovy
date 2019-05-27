@@ -15,6 +15,6 @@
 //     )
 // }
 
-def call(){
-    echo "Cris"
+def call(String login){
+    echo "Ola ${login}"
 }

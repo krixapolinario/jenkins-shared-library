@@ -7,7 +7,9 @@ pipeline {
     stages {
         stage('teste'){
             steps{
-                jiraTransition()
+                jiraTransition(
+                    login: 'cristiane'
+                )
             }
         }
     }
