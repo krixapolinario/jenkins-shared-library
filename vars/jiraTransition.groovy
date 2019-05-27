@@ -15,9 +15,9 @@
 
 
 def call(Map config){
-    if config.jiraState == 'OPEN' {
+    if ( config.jiraState == 'OPEN' ) {
         jiraStateId='1'
-    } else if config.jiraState == 'IN_PROGRESS' {
+    } else if ( config.jiraState == 'IN_PROGRESS' ) {
         jiraStateId='2'
     } else {
         jiraStateId='3'
