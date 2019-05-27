@@ -15,6 +15,6 @@
 //     )
 // }
 
-def call(String login){
+def call(String login='default'){
     echo "Ola ${login}"
 }
