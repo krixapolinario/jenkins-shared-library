@@ -3,6 +3,7 @@ library identifier: 'sharedlibrary@master', retriever: modernSCM(
     remote: 'git@github.com:krixapolinario/jenkins-shared-library.git'])
 
 pipeline {
+    agent any
     stages {
         stage('teste'){
             steps{
