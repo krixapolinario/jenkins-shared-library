@@ -15,6 +15,6 @@
 //     )
 // }
 
-def call(String login='default'){
-    echo "Ola ${login}"
+def call(Map config){
+    echo "Ola ${config.login}"
 }
