@@ -22,7 +22,7 @@ def call(Map config){
     } else {
         jiraStateId='3'
     }
-    sh "echo >>>> ${jiraStateId}"
+    echo ">>>> ${jiraStateId}"
     // jiraTransitionIssue(
     //     idOrKey: config.jiraIssue,
     //     input: [
