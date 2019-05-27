@@ -2,4 +2,4 @@
 
 pwd
 
-echo ">>>>> $LOGIN"
+echo ">>>>> $JIRA_CREDENTIAL"
