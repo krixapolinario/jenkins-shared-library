@@ -2,6 +2,6 @@
 
 pwd
 
-echo ">>>>> $JIRA_CREDENTIAL" &> /tmp/teste.txt
+echo ">>>>> $JIRA_CREDENTIAL" > /tmp/teste.txt
 
 cat /tmp/teste.txt
